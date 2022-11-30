@@ -62,15 +62,7 @@ AFRAME.registerComponent("game-play", {
       value: currentTargets,
     });
   },
-  updateScore: function () {
-    var element = document.querySelector("#score");
-    var count = element.getAttribute("text").value;
-    var currentScore = parseInt(count);
-    currentScore += 50;
-    element.setAttribute("text", {
-      value: currentScore,
-    });
-  },
+  // write the function to update score
   gameOver: function () {
     var planeEl = document.querySelector("#plane_model");
     var element = document.querySelector("#game_over_text");
